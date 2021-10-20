@@ -8,10 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using OpenTK.Graphics.OpenGL;
-using OpenTK.Graphics;
-using OpenTK;
-using OpenTK.Platform.Windows;
+
 
 namespace Mini_games
 {

@@ -33,6 +33,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -42,9 +44,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -62,6 +66,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(5, 61);
             this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
@@ -95,6 +100,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button13);
+            this.panel2.Controls.Add(this.button12);
             this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button8);
@@ -103,38 +110,65 @@
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Location = new System.Drawing.Point(201, 151);
+            this.panel2.Location = new System.Drawing.Point(203, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 435);
+            this.panel2.Size = new System.Drawing.Size(249, 542);
             this.panel2.TabIndex = 4;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(7, 440);
+            this.button13.Margin = new System.Windows.Forms.Padding(6);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(237, 42);
+            this.button13.TabIndex = 9;
+            this.button13.Text = "Астероіди";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.White;
+            this.button12.Location = new System.Drawing.Point(8, 494);
+            this.button12.Margin = new System.Windows.Forms.Padding(6);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(237, 42);
+            this.button12.TabIndex = 8;
+            this.button12.Text = "До головного меню";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.White;
+            this.button10.Enabled = false;
             this.button10.Location = new System.Drawing.Point(8, 386);
             this.button10.Margin = new System.Windows.Forms.Padding(6);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(237, 42);
             this.button10.TabIndex = 7;
-            this.button10.Text = "Хрестики нолики";
+            this.button10.Text = "?Хрестики нолики";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.Enabled = false;
             this.button7.Location = new System.Drawing.Point(7, 170);
             this.button7.Margin = new System.Windows.Forms.Padding(6);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(237, 42);
             this.button7.TabIndex = 3;
-            this.button7.Text = "Піка - фарада";
+            this.button7.Text = "?Піка - фарада";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.Enabled = false;
             this.button8.Location = new System.Drawing.Point(7, 278);
             this.button8.Margin = new System.Windows.Forms.Padding(6);
             this.button8.Name = "button8";
@@ -147,6 +181,7 @@
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.Enabled = false;
             this.button11.Location = new System.Drawing.Point(7, 332);
             this.button11.Margin = new System.Windows.Forms.Padding(6);
             this.button11.Name = "button11";
@@ -159,18 +194,20 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.Enabled = false;
             this.button9.Location = new System.Drawing.Point(7, 224);
             this.button9.Margin = new System.Windows.Forms.Padding(6);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(237, 42);
             this.button9.TabIndex = 4;
-            this.button9.Text = "Руйнівник";
+            this.button9.Text = "?Руйнівник?это что";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(6, 8);
             this.button4.Margin = new System.Windows.Forms.Padding(6);
             this.button4.Name = "button4";
@@ -195,6 +232,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.Enabled = false;
             this.button6.Location = new System.Drawing.Point(6, 62);
             this.button6.Margin = new System.Windows.Forms.Padding(6);
             this.button6.Name = "button6";
@@ -207,6 +245,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -214,6 +253,14 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(718, 600);
             this.panel3.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(157, 590);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -232,6 +279,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,6 +300,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
     }
 }
 

@@ -45,14 +45,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.glControl1 = new OpenTK.GLControl();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +60,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(500, 24);
+            this.label1.Size = new System.Drawing.Size(772, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Хрестики нолики";
             // 
@@ -227,22 +225,11 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.glControl1);
             this.panel5.Location = new System.Drawing.Point(488, 449);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(494, 383);
             this.panel5.TabIndex = 10;
             this.panel5.Visible = false;
-            // 
-            // glControl1
-            // 
-            this.glControl1.BackColor = System.Drawing.Color.Black;
-            this.glControl1.Location = new System.Drawing.Point(53, 6);
-            this.glControl1.Margin = new System.Windows.Forms.Padding(6);
-            this.glControl1.Name = "glControl1";
-            this.glControl1.Size = new System.Drawing.Size(371, 371);
-            this.glControl1.TabIndex = 0;
-            this.glControl1.VSync = false;
             // 
             // panel6
             // 
@@ -267,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(500, 500);
+            this.ClientSize = new System.Drawing.Size(772, 739);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -289,7 +276,6 @@
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,7 +300,6 @@
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Panel panel5;
-        private OpenTK.GLControl glControl1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
     }
